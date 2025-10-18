@@ -1,0 +1,106 @@
+.navbar {
+  width: 100%;
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  color: #e5e5e5;
+  background: linear-gradient(180deg, rgba(0,0,0,0.7), transparent);
+  z-index: 1000; 
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.navbar-left img {
+  width: 110px;
+}
+
+.navbar-left ul {
+  display: flex;
+  list-style: none;
+  gap: 2vw;
+}
+
+.navbar-left ul li {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.navbar-left ul li:hover {
+  background-color: rgb(56, 56, 56);
+}
+
+.navbar-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-right .icon {
+  cursor: pointer;
+  width: 20px;
+}
+
+.navbar-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.navbar-profile .profile {
+  width: 40px;
+  border-radius: 3px;
+}
+
+.navbar-profile .signout {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  padding: 10px;
+  font-size: 15px;
+  text-decoration: underline;
+  display: none;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  z-index: 10; 
+}
+
+.navbar-profile:hover .signout {
+  display: block;
+}
+.dark-nav{
+  background-color: #141414;
+}
+
+@media (max-width : 800px) {
+  .navbar{
+    padding: 20px 4%;
+  }
+   .navbar-left ul {
+    display: none;
+  }
+  .navbar-profile .profile{
+    height: 25px;
+  }
+}
+@media (max-width : 500px) {
+  .navbar-profile .profile{
+    height: 25px;
+    width: 30px;
+  }
+  .navbar-right{
+    gap: 10px;
+  }
+}

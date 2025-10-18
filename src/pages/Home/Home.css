@@ -1,0 +1,146 @@
+.hero{
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+.hero-banner{
+  width: 100%;
+  z-index: -1;
+  mask-image: linear-gradient(to right, transparent,black 75%);
+  -webkit-mask-image: linear-gradient(to right, transparent,black 75%);
+}
+.hero-caption{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-left: 6%;
+}
+.hero-title{
+  width: 90%;
+  max-width: 420px;
+  margin-bottom: 30px;
+}
+.hero-caption p{
+  max-width: 600px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.hero_btns {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  border: none;
+  width: 120px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-btn {
+  background-color: rgb(90, 86, 86);
+  border: 2px solid rgb(90, 86, 86);
+  color: white;
+}
+
+
+.play-btn {
+  width: 0;
+  height: 0;
+  border-left: 10px solid black;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+.info-btn {
+  width: 18px;
+}
+.btn:hover{
+  background-color: #ffffffbf;
+}
+.more-cards{
+  padding-left: 6%;
+}
+@media (max-width: 1024px) {
+  .hero-caption .title-card {
+    display: none;
+  }
+  .hero-caption .hero-title{
+    width: 220px;
+    margin-bottom: 20px;
+  }
+  .hero-caption p{
+    font-size: 16px;
+  }
+  .btn{
+    width: 100px;
+    height: 40px;
+    gap: 6px;
+    font-size: 14px;
+  }
+  .hero-caption{
+    position: absolute;
+    top:25vw;
+  }
+}
+@media (max-width: 700px) {
+  .hero-caption .title-card {
+    display: none;
+  }
+  .hero-caption .hero-title{
+    margin-bottom: 15px;
+    width: 200px;
+  }
+  .hero-caption p{
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .btn{
+    width: 90px;
+    height: 40px;
+    gap: 4px;
+    font-size: 14px;
+  }
+  .hero-caption{
+    position: absolute;
+    top:14vw;
+    padding-left: 4%;
+  }
+  
+}
+@media (max-width: 520px) {
+  .hero-caption .title-card {
+    display: none;
+  }
+  .hero-caption .hero-title{
+    margin-bottom: 4px;
+    width: 160px;
+  }
+  .hero-caption p{
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .btn{
+    width: 70px;
+    height: 35px;
+    gap: 2px;
+    font-size: 10px;
+  }
+  .hero-caption{
+    position: absolute;
+    top:12vw;
+    
+  }
+  .more-cards{
+    padding-left: 4%;
+  }
+  
+}
